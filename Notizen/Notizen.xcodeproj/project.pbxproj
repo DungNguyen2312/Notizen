@@ -15,6 +15,8 @@
 		F358201626FCA1E0001413CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F358201426FCA1E0001413CF /* LaunchScreen.storyboard */; };
 		F358202126FCA1E0001413CF /* NotizenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358202026FCA1E0001413CF /* NotizenTests.swift */; };
 		F358202C26FCA1E0001413CF /* NotizenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358202B26FCA1E0001413CF /* NotizenUITests.swift */; };
+		F358203A26FCA37F001413CF /* GespeichertNotiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358203926FCA37F001413CF /* GespeichertNotiz.swift */; };
+		F358203C26FCA3E5001413CF /* ReinschreibenNotiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358203B26FCA3E5001413CF /* ReinschreibenNotiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		F358202726FCA1E0001413CF /* NotizenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotizenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F358202B26FCA1E0001413CF /* NotizenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotizenUITests.swift; sourceTree = "<group>"; };
 		F358202D26FCA1E0001413CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F358203926FCA37F001413CF /* GespeichertNotiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GespeichertNotiz.swift; sourceTree = "<group>"; };
+		F358203B26FCA3E5001413CF /* ReinschreibenNotiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReinschreibenNotiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				F358201226FCA1E0001413CF /* Assets.xcassets */,
 				F358201426FCA1E0001413CF /* LaunchScreen.storyboard */,
 				F358201726FCA1E0001413CF /* Info.plist */,
+				F358203926FCA37F001413CF /* GespeichertNotiz.swift */,
+				F358203B26FCA3E5001413CF /* ReinschreibenNotiz.swift */,
 			);
 			path = Notizen;
 			sourceTree = "<group>";
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F358203A26FCA37F001413CF /* GespeichertNotiz.swift in Sources */,
 				F358200E26FCA1DF001413CF /* ViewController.swift in Sources */,
 				F358200A26FCA1DE001413CF /* AppDelegate.swift in Sources */,
+				F358203C26FCA3E5001413CF /* ReinschreibenNotiz.swift in Sources */,
 				F358200C26FCA1DF001413CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
