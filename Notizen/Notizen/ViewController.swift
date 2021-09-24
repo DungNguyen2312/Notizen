@@ -17,8 +17,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @IBAction func erstellenNotiz() {
-        
-        
+        guard let vc = storyboard?.instantiateViewController(identifier: "neu") as? ReinschreibenNotiz else {
+            return
+        }
+        vc.title = "Neue Notiz"
+        navigationController?.pushViewController(vc, animated: true)
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return models.count
@@ -40,7 +43,7 @@ func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forR
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        guard let vc = storyboard?.instantiateViewController(identifier: "Notiz") as? GespeichertNotiz else {
+        guard let vc =      storyboard?.instantiateViewController(identifier: "Notiz") as? GespeichertNotiz else {
             return
         }
         vc.title = "Notiz"
