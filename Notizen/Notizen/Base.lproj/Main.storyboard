@@ -55,7 +55,7 @@
         <!--GescpeicherteNotiz-->
         <scene sceneID="D5A-ZH-6CR">
             <objects>
-                <viewController title="GescpeicherteNotiz" id="By8-fs-wJw" sceneMemberID="viewController">
+                <viewController title="GescpeicherteNotiz" id="By8-fs-wJw" customClass="GespeichertNotiz" customModule="Notizen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uKU-49-04T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +86,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Delete"/>
                                 <connections>
+                                    <action selector="DeleteButton:" destination="By8-fs-wJw" eventType="touchUpInside" id="Gsn-t8-Evl"/>
                                     <action selector="DeleteButton:" destination="VAF-Ez-BXu" eventType="touchUpInside" id="HFs-76-WTL"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="3qi-dw-KHW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1v-KZ-r1N">
@@ -102,6 +104,10 @@
                         <viewLayoutGuide key="safeArea" id="2Li-3l-PQz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="NotizText" destination="Yc6-SG-Slj" id="f6b-ub-jHs"/>
+                        <outlet property="Notizuberschrift" destination="XLA-iR-6C5" id="dZ5-mU-tMb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rJ-8Z-bvh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="VAF-Ez-BXu" userLabel="Exit" sceneMemberID="exit"/>
