@@ -15,8 +15,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @IBAction func erstellenNotiz() {
-        
-        
+        guard let vc = storyboard?.instantiateViewController(identifier: "neu") as? ReinschreibenNotiz else {
+            return
+        }
+        vc.title = "Neue Notiz"
+        navigationController?.pushViewController(vc, animated: true)
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return models.count
