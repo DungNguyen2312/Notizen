@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @IBAction func erstellenNotiz() {
-        guard let vc = storyboard?.instantiateViewController(identifier: "neu") as? ReinschreibenNotiz else {
+        guard let vc = storyboard?.instantiateViewController(identifier: "neu") as? ReinschreibenNotitz else {
             return
         }
         vc.title = "Neue Notiz"
