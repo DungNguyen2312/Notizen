@@ -1,6 +1,6 @@
 import UIKit
 
-class NoteViewController: UIViewController {
+class GespeichertNotiz: UIViewController {
 
     @IBOutlet var GespeicherteNotizText: UITextView!
     
