@@ -1,19 +1,21 @@
-impoimport UIKit
+import UIKit
 
 class NoteViewController: UIViewController {
 
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var noteLabel: UITextView!
+    @IBOutlet var GespeicherteNotizText: UITextView!
     
-    public var noteTitle: String = ""
-    public var note: String = ""
-
+    
+    @IBOutlet var  GespeicherteNotizUberschrift: UITextView!
+    
+    public var NotizUberschrift: String = ""
+    public var Notiz: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = noteTitle
-        noteLabel.text = note
+        GespeicherteNotizUberschrift.text = NotizUberschrift
+        GespeicherteNotizText.text = Notiz
     }
-
-
+    
+    
 }
 
