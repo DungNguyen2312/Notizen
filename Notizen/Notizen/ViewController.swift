@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        guard let vc = storyboard?.instantiateViewController(identifier: "Notiz") as? GespeichertNotiz else {
+        guard let vc =      storyboard?.instantiateViewController(identifier: "Notiz") as? GespeichertNotiz else {
             return
         }
         vc.title = "Notiz"
