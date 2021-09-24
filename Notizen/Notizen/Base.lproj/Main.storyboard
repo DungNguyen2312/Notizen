@@ -42,7 +42,13 @@
                             <constraint firstItem="1kQ-mU-e1u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rHP-Bz-cPv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Notizen" id="zFN-Nu-Dsr"/>
+                    <navigationItem key="navigationItem" title="Notizen" id="zFN-Nu-Dsr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1SZ-AE-dfH">
+                            <connections>
+                                <action selector="erstellenNotiz" destination="BYZ-38-t0r" id="3f5-7v-il0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="label" destination="1kQ-mU-e1u" id="aIU-An-GwX"/>
                         <outlet property="table" destination="RPa-tp-awX" id="fzy-17-GIH"/>
@@ -132,11 +138,63 @@
             </objects>
             <point key="canvasLocation" x="40.579710144927539" y="115.84821428571428"/>
         </scene>
+<<<<<<< HEAD
+        <!--Reinschreiben Notitz-->
+        <scene sceneID="NU0-vM-BQj">
+            <objects>
+                <viewController id="PzR-qw-Q7p" customClass="ReinschreibenNotitz" customModule="Notizen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8BU-8s-OKx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D9F-mB-0eE">
+                                <rect key="frame" x="10" y="54" width="394" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="xUf-FS-XC0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Et0-ii-mQz">
+                                <rect key="frame" x="10" y="170" width="394" height="682"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nlx-6l-Kdr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Et0-ii-mQz" firstAttribute="leading" secondItem="Nlx-6l-Kdr" secondAttribute="leading" constant="10" id="5jB-fN-X3u"/>
+                            <constraint firstItem="Et0-ii-mQz" firstAttribute="top" secondItem="D9F-mB-0eE" secondAttribute="bottom" constant="10" id="JVr-ma-d6D"/>
+                            <constraint firstItem="Nlx-6l-Kdr" firstAttribute="trailing" secondItem="D9F-mB-0eE" secondAttribute="trailing" constant="10" id="WhN-7k-guE"/>
+                            <constraint firstItem="D9F-mB-0eE" firstAttribute="top" secondItem="Nlx-6l-Kdr" secondAttribute="top" constant="10" id="Wtl-q4-vjZ"/>
+                            <constraint firstItem="D9F-mB-0eE" firstAttribute="leading" secondItem="Nlx-6l-Kdr" secondAttribute="leading" constant="10" id="iIH-Fi-w8S"/>
+                            <constraint firstItem="Nlx-6l-Kdr" firstAttribute="bottom" secondItem="D9F-mB-0eE" secondAttribute="bottom" constant="702" id="pKV-qU-G4A"/>
+                            <constraint firstItem="Nlx-6l-Kdr" firstAttribute="bottom" secondItem="Et0-ii-mQz" secondAttribute="bottom" constant="10" id="vts-gD-Iey"/>
+                            <constraint firstItem="Nlx-6l-Kdr" firstAttribute="trailing" secondItem="Et0-ii-mQz" secondAttribute="trailing" constant="10" id="vxA-jc-8u6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="noteField" destination="Et0-ii-mQz" id="0h4-C0-vxg"/>
+                        <outlet property="titleField" destination="D9F-mB-0eE" id="VFb-dr-pjn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6h5-ub-dHZ" userLabel="ReinschreibenNotiz" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="-557"/>
+        </scene>
+=======
+>>>>>>> 90d5d24922879c0674e1e7b2288aec891f4a57d0
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Nos-EW-AyE"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
