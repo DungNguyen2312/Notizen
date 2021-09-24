@@ -4,12 +4,16 @@ class GespeichertNotiz: UIViewController {
 
     @IBOutlet var GespeicherteNotizText: UITextView!
     
+    @IBOutlet weak var Notizuberschrift: UITextField!
+    @IBOutlet weak var NotizText: UITextField!
     
     @IBOutlet var  GespeicherteNotizUberschrift: UITextView!
     
     @IBOutlet var DeleteButton: UIButton!
     
     @IBAction func DeleteButton(_ sender: UIButton) {
+        NotizText.text = ""
+        Notizuberschrift.text = ""
     }
     
     public var NotizUberschrift: String = ""

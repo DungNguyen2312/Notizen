@@ -13,44 +13,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Notizen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="keine Notizen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kQ-mU-e1u">
-                                <rect key="frame" x="155" y="437.5" width="104" height="21"/>
+                                <rect key="frame" x="155" y="410.5" width="104" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RPa-tp-awX">
-                                <rect key="frame" x="0.0" y="144" width="406" height="718"/>
+                                <rect key="frame" x="0.0" y="4" width="406" height="804"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="f2Z-yL-Hxf" detailTextLabel="6zp-nv-8wG" style="IBUITableViewCellStyleSubtitle" id="UxV-bE-SXA">
-                                        <rect key="frame" x="0.0" y="24.5" width="406" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UxV-bE-SXA" id="bDb-Rc-vU2">
-                                            <rect key="frame" x="0.0" y="0.0" width="406" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f2Z-yL-Hxf">
-                                                    <rect key="frame" x="20" y="6" width="25" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6zp-nv-8wG">
-                                                    <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -84,20 +58,67 @@
             </objects>
             <point key="canvasLocation" x="950.72463768115949" y="115.84821428571428"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="uQW-Ua-SK6">
+        <!--GescpeicherteNotiz-->
+        <scene sceneID="D5A-ZH-6CR">
             <objects>
-                <viewController id="b6F-Fh-IDJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LSC-jb-3fr" customClass="ReinschreibenNotiz">
+                <viewController title="GescpeicherteNotiz" id="By8-fs-wJw" customClass="GespeichertNotiz" customModule="Notizen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uKU-49-04T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="SCd-nv-o5c"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yc6-SG-Slj">
+                                <rect key="frame" x="9" y="136" width="395" height="641"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="GescpeicherteNotiz:" destination="VAF-Ez-BXu" eventType="editingDidEnd" id="DOK-NG-lTZ"/>
+                                    <action selector="GespeicherteNotizText:" destination="VAF-Ez-BXu" eventType="editingDidEnd" id="hsQ-Rd-ykh"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XLA-iR-6C5">
+                                <rect key="frame" x="9" y="66" width="395" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="GespeicherteNotizUberschrift:" destination="VAF-Ez-BXu" eventType="editingDidEnd" id="zgr-dD-O2i"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5x-dm-P19">
+                                <rect key="frame" x="20" y="800" width="77" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="DeleteButton:" destination="By8-fs-wJw" eventType="touchUpInside" id="Gsn-t8-Evl"/>
+                                    <action selector="DeleteButton:" destination="VAF-Ez-BXu" eventType="touchUpInside" id="HFs-76-WTL"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="3qi-dw-KHW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1v-KZ-r1N">
+                                <rect key="frame" x="298" y="795" width="73" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Return"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="Nos-EW-AyE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Li-3l-PQz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="NotizText" destination="Yc6-SG-Slj" id="f6b-ub-jHs"/>
+                        <outlet property="Notizuberschrift" destination="XLA-iR-6C5" id="dZ5-mU-tMb"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KBu-Mb-1qk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3rJ-8Z-bvh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="VAF-Ez-BXu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1777" y="116"/>
+            <point key="canvasLocation" x="1789.8550724637682" y="126.5625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WL0-LH-Ta1">
@@ -117,6 +138,7 @@
             </objects>
             <point key="canvasLocation" x="40.579710144927539" y="115.84821428571428"/>
         </scene>
+<<<<<<< HEAD
         <!--Reinschreiben Notitz-->
         <scene sceneID="NU0-vM-BQj">
             <objects>
@@ -163,7 +185,12 @@
             </objects>
             <point key="canvasLocation" x="749" y="-557"/>
         </scene>
+=======
+>>>>>>> 90d5d24922879c0674e1e7b2288aec891f4a57d0
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Nos-EW-AyE"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
