@@ -32,13 +32,11 @@
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="RPa-tp-awX" secondAttribute="bottom" id="4Ni-xp-VWh"/>
                             <constraint firstItem="RPa-tp-awX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AhW-sG-JCC"/>
-                            <constraint firstItem="RPa-tp-awX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="G9Y-eS-2aW"/>
+                            <constraint firstItem="RPa-tp-awX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="Chx-ML-Fbh"/>
                             <constraint firstAttribute="bottomMargin" secondItem="RPa-tp-awX" secondAttribute="bottom" id="QzH-iT-ZpY"/>
                             <constraint firstItem="1kQ-mU-e1u" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VKH-QS-7Qw"/>
                             <constraint firstItem="RPa-tp-awX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y5V-LC-UWW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RPa-tp-awX" secondAttribute="trailing" id="f64-Nr-eak"/>
-                            <constraint firstItem="RPa-tp-awX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ghV-Ud-Wrj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RPa-tp-awX" secondAttribute="trailing" constant="8" id="la5-sS-PTz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RPa-tp-awX" secondAttribute="trailing" constant="8" id="gct-4g-1T9"/>
                             <constraint firstItem="1kQ-mU-e1u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rHP-Bz-cPv"/>
                         </constraints>
                     </view>
@@ -63,7 +61,6 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yc6-SG-Slj">
                                 <rect key="frame" x="9" y="136" width="395" height="641"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>

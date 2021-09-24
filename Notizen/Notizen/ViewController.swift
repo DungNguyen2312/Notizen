@@ -15,6 +15,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @IBAction func erstellenNotiz() {
+        guard let vc = storyboard?.instantiateViewController(identifier: "neu") as? ReinschreibenNotiz else {
+            return
+        }
+        vc.title = "Neue Notiz"
+        vc.completion =
+        navigationController?.pushViewController(vc, animated: true)
+
         
         
     }
@@ -23,7 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: <#T##IndexPath#>)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = models[indexPath.row].title
         cell.detailTextLabel?.text = models[indexPath.row].note
         return cell
